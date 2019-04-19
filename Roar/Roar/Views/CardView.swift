@@ -8,22 +8,9 @@
 
 import UIKit
 
-extension ViewController {
+extension HomeController {
     
     
-    func setupDummyCard() {
-
-        //        let imageView = UIImageView(image: #imageLiteral(resourceName: "bear"))
-        let newImage = UIImage(named: "bear")
-        animalView.image = newImage
-        animalLabel.text = "bear"
-        
-        
-        //Gesture
-        //origin setup
-        //        originCardPoint = cardView.frame.origin
-        
-    }
     // MARK: - Gradient On a textView
     func gradientTextView() {
         
@@ -35,8 +22,5 @@ extension ViewController {
         textView.layer.mask = gradientLayer
         
     }
-    
-    
-    
-    
+
 }

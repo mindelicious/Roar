@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeController" customModule="Roar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56c-i4-FRj" userLabel="Cards View">
+                                <rect key="frame" x="26" y="94" width="323" height="484"/>
+                                <subviews>
+                                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wIx-9w-Qeh">
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="484"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lnd-dr-gkb" userLabel="Animal Name View">
+                                        <rect key="frame" x="0.0" y="314.66666666666669" width="323" height="169.33333333333331"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bear" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WW-DR-Jv7">
+                                                <rect key="frame" x="125.33333333333334" y="75" width="72.333333333333343" height="86.333333333333314"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
+                                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstItem="5WW-DR-Jv7" firstAttribute="bottom" secondItem="Lnd-dr-gkb" secondAttribute="bottomMargin" id="djm-tx-vFH"/>
+                                            <constraint firstItem="5WW-DR-Jv7" firstAttribute="centerX" secondItem="Lnd-dr-gkb" secondAttribute="centerX" id="eA5-Tg-3cT"/>
+                                            <constraint firstItem="5WW-DR-Jv7" firstAttribute="top" secondItem="Lnd-dr-gkb" secondAttribute="top" constant="75" id="u4G-2u-5Gw"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="Lnd-dr-gkb" firstAttribute="leading" secondItem="56c-i4-FRj" secondAttribute="leading" id="2xr-Rj-2mw"/>
+                                    <constraint firstAttribute="trailing" secondItem="wIx-9w-Qeh" secondAttribute="trailing" id="D5v-ie-Fjz"/>
+                                    <constraint firstItem="Lnd-dr-gkb" firstAttribute="height" secondItem="56c-i4-FRj" secondAttribute="height" multiplier="0.35" id="OY0-mR-cyl"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lnd-dr-gkb" secondAttribute="bottom" id="Pe8-gB-0Yj"/>
+                                    <constraint firstAttribute="bottom" secondItem="wIx-9w-Qeh" secondAttribute="bottom" id="Uwd-2B-a3T"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lnd-dr-gkb" secondAttribute="trailing" id="aOw-R3-LQR"/>
+                                    <constraint firstItem="wIx-9w-Qeh" firstAttribute="leading" secondItem="56c-i4-FRj" secondAttribute="leading" id="pxK-Ff-u2l"/>
+                                    <constraint firstItem="wIx-9w-Qeh" firstAttribute="top" secondItem="56c-i4-FRj" secondAttribute="top" id="tKz-Ux-PfA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="QGD-1p-daA" appends="YES" id="0Qh-15-KZH"/>
+                                    <outletCollection property="gestureRecognizers" destination="Gxi-Co-Esl" appends="YES" id="dKx-BV-5qP"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81510418653488159" green="0.81510418653488159" blue="0.81510418653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="56c-i4-FRj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="WdD-wY-rVP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="56c-i4-FRj" secondAttribute="bottom" constant="200" id="g9k-wB-njd"/>
+                            <constraint firstItem="56c-i4-FRj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="reC-te-VAC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="56c-i4-FRj" secondAttribute="trailing" constant="26" id="wfk-3h-8yL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="animalLabel" destination="5WW-DR-Jv7" id="J1F-6e-uO6"/>
+                        <outlet property="animalView" destination="wIx-9w-Qeh" id="iQA-AE-7kW"/>
+                        <outlet property="cardView" destination="56c-i4-FRj" id="GS7-9P-Y9G"/>
+                        <outlet property="textView" destination="Lnd-dr-gkb" id="NLZ-rJ-jGK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="QGD-1p-daA" userLabel="Card Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="panCardWithRecognizer:" destination="BYZ-38-t0r" id="rzg-nD-hx2"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="Gxi-Co-Esl"/>
+            </objects>
+            <point key="canvasLocation" x="-606" y="-12"/>
+        </scene>
+    </scenes>
+</document>

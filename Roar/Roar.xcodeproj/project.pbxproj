@@ -9,11 +9,40 @@
 /* Begin PBXBuildFile section */
 		5CA2480159F9FAFD3B029BFD /* Pods_Roar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADEB36CA6865F533C1C49B /* Pods_Roar.framework */; };
 		C9172DA822079BEC009EC08F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9172DA722079BEC009EC08F /* AppDelegate.swift */; };
-		C9172DAA22079BEC009EC08F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9172DA922079BEC009EC08F /* ViewController.swift */; };
+		C9172DAA22079BEC009EC08F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9172DA922079BEC009EC08F /* HomeController.swift */; };
 		C9172DAD22079BEC009EC08F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9172DAB22079BEC009EC08F /* Main.storyboard */; };
 		C9172DAF22079BEE009EC08F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9172DAE22079BEE009EC08F /* Assets.xcassets */; };
 		C9172DB222079BEE009EC08F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9172DB022079BEE009EC08F /* LaunchScreen.storyboard */; };
 		C93C7995220C00CD002BA573 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93C7994220C00CD002BA573 /* CardView.swift */; };
+		C96E8E9522346416001611AA /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E8E9422346416001611AA /* Animal.swift */; };
+		C99859CE226664FA00C87E69 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99859CD226664FA00C87E69 /* ViewExtension.swift */; };
+		C99859D02266E91C00C87E69 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99859CF2266E91C00C87E69 /* PlaySound.swift */; };
+		C9985A242269977F00C87E69 /* Lion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A0A2269977D00C87E69 /* Lion.mp3 */; };
+		C9985A252269977F00C87E69 /* Owl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A0B2269977D00C87E69 /* Owl.mp3 */; };
+		C9985A262269977F00C87E69 /* Seagull.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A0C2269977D00C87E69 /* Seagull.mp3 */; };
+		C9985A272269977F00C87E69 /* Monkey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A0D2269977D00C87E69 /* Monkey.mp3 */; };
+		C9985A282269977F00C87E69 /* Cough.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A0E2269977D00C87E69 /* Cough.mp3 */; };
+		C9985A292269977F00C87E69 /* Fly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A0F2269977D00C87E69 /* Fly.mp3 */; };
+		C9985A2A2269977F00C87E69 /* Frog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A102269977D00C87E69 /* Frog.mp3 */; };
+		C9985A2B2269977F00C87E69 /* Seal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A112269977D00C87E69 /* Seal.mp3 */; };
+		C9985A2C2269977F00C87E69 /* Snake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A122269977E00C87E69 /* Snake.mp3 */; };
+		C9985A2D2269977F00C87E69 /* Parrot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A132269977E00C87E69 /* Parrot.mp3 */; };
+		C9985A2E2269977F00C87E69 /* Donkey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A142269977E00C87E69 /* Donkey.mp3 */; };
+		C9985A2F2269977F00C87E69 /* Duck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A152269977E00C87E69 /* Duck.mp3 */; };
+		C9985A302269977F00C87E69 /* Cow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A162269977E00C87E69 /* Cow.mp3 */; };
+		C9985A312269977F00C87E69 /* Goat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A172269977E00C87E69 /* Goat.mp3 */; };
+		C9985A322269977F00C87E69 /* Sheep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A182269977E00C87E69 /* Sheep.mp3 */; };
+		C9985A332269977F00C87E69 /* Bear.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A192269977E00C87E69 /* Bear.mp3 */; };
+		C9985A342269977F00C87E69 /* Elephant.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A1A2269977E00C87E69 /* Elephant.mp3 */; };
+		C9985A352269977F00C87E69 /* Pig.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A1B2269977E00C87E69 /* Pig.mp3 */; };
+		C9985A362269977F00C87E69 /* Cat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A1C2269977E00C87E69 /* Cat.mp3 */; };
+		C9985A372269977F00C87E69 /* Tiger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A1D2269977E00C87E69 /* Tiger.mp3 */; };
+		C9985A382269977F00C87E69 /* Zebra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A1E2269977F00C87E69 /* Zebra.mp3 */; };
+		C9985A392269977F00C87E69 /* Rooster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A1F2269977F00C87E69 /* Rooster.mp3 */; };
+		C9985A3A2269977F00C87E69 /* Chicken.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A202269977F00C87E69 /* Chicken.mp3 */; };
+		C9985A3B2269977F00C87E69 /* Dog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A212269977F00C87E69 /* Dog.mp3 */; };
+		C9985A3C2269977F00C87E69 /* Snake.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9985A222269977F00C87E69 /* Snake.wav */; };
+		C9985A3D2269977F00C87E69 /* Horse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A232269977F00C87E69 /* Horse.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,12 +50,41 @@
 		B3CE165B305614D52CC63E79 /* Pods-Roar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Roar/Pods-Roar.release.xcconfig"; sourceTree = "<group>"; };
 		C9172DA422079BEC009EC08F /* Roar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9172DA722079BEC009EC08F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9172DA922079BEC009EC08F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9172DA922079BEC009EC08F /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		C9172DAC22079BEC009EC08F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9172DAE22079BEE009EC08F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9172DB122079BEE009EC08F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9172DB322079BEE009EC08F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93C7994220C00CD002BA573 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C96E8E9422346416001611AA /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		C99859CD226664FA00C87E69 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		C99859CF2266E91C00C87E69 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		C9985A0A2269977D00C87E69 /* Lion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Lion.mp3; path = ../../Sounds/Lion.mp3; sourceTree = "<group>"; };
+		C9985A0B2269977D00C87E69 /* Owl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Owl.mp3; path = ../../Sounds/Owl.mp3; sourceTree = "<group>"; };
+		C9985A0C2269977D00C87E69 /* Seagull.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Seagull.mp3; path = ../../Sounds/Seagull.mp3; sourceTree = "<group>"; };
+		C9985A0D2269977D00C87E69 /* Monkey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Monkey.mp3; path = ../../Sounds/Monkey.mp3; sourceTree = "<group>"; };
+		C9985A0E2269977D00C87E69 /* Cough.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Cough.mp3; path = ../../Sounds/Cough.mp3; sourceTree = "<group>"; };
+		C9985A0F2269977D00C87E69 /* Fly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Fly.mp3; path = ../../Sounds/Fly.mp3; sourceTree = "<group>"; };
+		C9985A102269977D00C87E69 /* Frog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Frog.mp3; path = ../../Sounds/Frog.mp3; sourceTree = "<group>"; };
+		C9985A112269977D00C87E69 /* Seal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Seal.mp3; path = ../../Sounds/Seal.mp3; sourceTree = "<group>"; };
+		C9985A122269977E00C87E69 /* Snake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Snake.mp3; path = ../../Sounds/Snake.mp3; sourceTree = "<group>"; };
+		C9985A132269977E00C87E69 /* Parrot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Parrot.mp3; path = ../../Sounds/Parrot.mp3; sourceTree = "<group>"; };
+		C9985A142269977E00C87E69 /* Donkey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Donkey.mp3; path = ../../Sounds/Donkey.mp3; sourceTree = "<group>"; };
+		C9985A152269977E00C87E69 /* Duck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Duck.mp3; path = ../../Sounds/Duck.mp3; sourceTree = "<group>"; };
+		C9985A162269977E00C87E69 /* Cow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Cow.mp3; path = ../../Sounds/Cow.mp3; sourceTree = "<group>"; };
+		C9985A172269977E00C87E69 /* Goat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Goat.mp3; path = ../../Sounds/Goat.mp3; sourceTree = "<group>"; };
+		C9985A182269977E00C87E69 /* Sheep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Sheep.mp3; path = ../../Sounds/Sheep.mp3; sourceTree = "<group>"; };
+		C9985A192269977E00C87E69 /* Bear.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Bear.mp3; path = ../../Sounds/Bear.mp3; sourceTree = "<group>"; };
+		C9985A1A2269977E00C87E69 /* Elephant.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Elephant.mp3; path = ../../Sounds/Elephant.mp3; sourceTree = "<group>"; };
+		C9985A1B2269977E00C87E69 /* Pig.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Pig.mp3; path = ../../Sounds/Pig.mp3; sourceTree = "<group>"; };
+		C9985A1C2269977E00C87E69 /* Cat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Cat.mp3; path = ../../Sounds/Cat.mp3; sourceTree = "<group>"; };
+		C9985A1D2269977E00C87E69 /* Tiger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Tiger.mp3; path = ../../Sounds/Tiger.mp3; sourceTree = "<group>"; };
+		C9985A1E2269977F00C87E69 /* Zebra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Zebra.mp3; path = ../../Sounds/Zebra.mp3; sourceTree = "<group>"; };
+		C9985A1F2269977F00C87E69 /* Rooster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Rooster.mp3; path = ../../Sounds/Rooster.mp3; sourceTree = "<group>"; };
+		C9985A202269977F00C87E69 /* Chicken.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Chicken.mp3; path = ../../Sounds/Chicken.mp3; sourceTree = "<group>"; };
+		C9985A212269977F00C87E69 /* Dog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Dog.mp3; path = ../../Sounds/Dog.mp3; sourceTree = "<group>"; };
+		C9985A222269977F00C87E69 /* Snake.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Snake.wav; path = ../../Sounds/Snake.wav; sourceTree = "<group>"; };
+		C9985A232269977F00C87E69 /* Horse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Horse.mp3; path = ../../Sounds/Horse.mp3; sourceTree = "<group>"; };
 		E2494D10B07E14A59DC5652A /* Pods-Roar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roar/Pods-Roar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				C9172DA622079BEC009EC08F /* Roar */,
+				C99859D12266EFED00C87E69 /* Sounds */,
 				C9172DA522079BEC009EC08F /* Products */,
 				F6B8731E204D5014656CCCF4 /* Pods */,
 				2DBB3361705C042894259B64 /* Frameworks */,
@@ -71,10 +130,10 @@
 		C9172DA622079BEC009EC08F /* Roar */ = {
 			isa = PBXGroup;
 			children = (
+				C96E8E9322346321001611AA /* Model */,
 				C93C7993220C0090002BA573 /* Views */,
+				C99859CC22658CAE00C87E69 /* Controller */,
 				C9172DA722079BEC009EC08F /* AppDelegate.swift */,
-				C9172DA922079BEC009EC08F /* ViewController.swift */,
-				C9172DAB22079BEC009EC08F /* Main.storyboard */,
 				C9172DAE22079BEE009EC08F /* Assets.xcassets */,
 				C9172DB022079BEE009EC08F /* LaunchScreen.storyboard */,
 				C9172DB322079BEE009EC08F /* Info.plist */,
@@ -85,9 +144,61 @@
 		C93C7993220C0090002BA573 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C9172DAB22079BEC009EC08F /* Main.storyboard */,
 				C93C7994220C00CD002BA573 /* CardView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C96E8E9322346321001611AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C96E8E9422346416001611AA /* Animal.swift */,
+				C99859CD226664FA00C87E69 /* ViewExtension.swift */,
+				C99859CF2266E91C00C87E69 /* PlaySound.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C99859CC22658CAE00C87E69 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9172DA922079BEC009EC08F /* HomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C99859D12266EFED00C87E69 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C9985A192269977E00C87E69 /* Bear.mp3 */,
+				C9985A1C2269977E00C87E69 /* Cat.mp3 */,
+				C9985A202269977F00C87E69 /* Chicken.mp3 */,
+				C9985A0E2269977D00C87E69 /* Cough.mp3 */,
+				C9985A162269977E00C87E69 /* Cow.mp3 */,
+				C9985A212269977F00C87E69 /* Dog.mp3 */,
+				C9985A142269977E00C87E69 /* Donkey.mp3 */,
+				C9985A152269977E00C87E69 /* Duck.mp3 */,
+				C9985A1A2269977E00C87E69 /* Elephant.mp3 */,
+				C9985A0F2269977D00C87E69 /* Fly.mp3 */,
+				C9985A102269977D00C87E69 /* Frog.mp3 */,
+				C9985A172269977E00C87E69 /* Goat.mp3 */,
+				C9985A232269977F00C87E69 /* Horse.mp3 */,
+				C9985A0A2269977D00C87E69 /* Lion.mp3 */,
+				C9985A0D2269977D00C87E69 /* Monkey.mp3 */,
+				C9985A0B2269977D00C87E69 /* Owl.mp3 */,
+				C9985A132269977E00C87E69 /* Parrot.mp3 */,
+				C9985A1B2269977E00C87E69 /* Pig.mp3 */,
+				C9985A1F2269977F00C87E69 /* Rooster.mp3 */,
+				C9985A0C2269977D00C87E69 /* Seagull.mp3 */,
+				C9985A112269977D00C87E69 /* Seal.mp3 */,
+				C9985A182269977E00C87E69 /* Sheep.mp3 */,
+				C9985A122269977E00C87E69 /* Snake.mp3 */,
+				C9985A222269977F00C87E69 /* Snake.wav */,
+				C9985A1D2269977E00C87E69 /* Tiger.mp3 */,
+				C9985A1E2269977F00C87E69 /* Zebra.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		F6B8731E204D5014656CCCF4 /* Pods */ = {
@@ -133,6 +244,7 @@
 				TargetAttributes = {
 					C9172DA322079BEC009EC08F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -159,9 +271,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9985A2E2269977F00C87E69 /* Donkey.mp3 in Resources */,
+				C9985A362269977F00C87E69 /* Cat.mp3 in Resources */,
+				C9985A2B2269977F00C87E69 /* Seal.mp3 in Resources */,
+				C9985A2D2269977F00C87E69 /* Parrot.mp3 in Resources */,
+				C9985A262269977F00C87E69 /* Seagull.mp3 in Resources */,
+				C9985A272269977F00C87E69 /* Monkey.mp3 in Resources */,
+				C9985A2A2269977F00C87E69 /* Frog.mp3 in Resources */,
+				C9985A3C2269977F00C87E69 /* Snake.wav in Resources */,
+				C9985A242269977F00C87E69 /* Lion.mp3 in Resources */,
+				C9985A2C2269977F00C87E69 /* Snake.mp3 in Resources */,
+				C9985A322269977F00C87E69 /* Sheep.mp3 in Resources */,
+				C9985A3A2269977F00C87E69 /* Chicken.mp3 in Resources */,
+				C9985A292269977F00C87E69 /* Fly.mp3 in Resources */,
+				C9985A382269977F00C87E69 /* Zebra.mp3 in Resources */,
 				C9172DB222079BEE009EC08F /* LaunchScreen.storyboard in Resources */,
+				C9985A312269977F00C87E69 /* Goat.mp3 in Resources */,
 				C9172DAF22079BEE009EC08F /* Assets.xcassets in Resources */,
+				C9985A372269977F00C87E69 /* Tiger.mp3 in Resources */,
+				C9985A282269977F00C87E69 /* Cough.mp3 in Resources */,
+				C9985A2F2269977F00C87E69 /* Duck.mp3 in Resources */,
+				C9985A342269977F00C87E69 /* Elephant.mp3 in Resources */,
+				C9985A332269977F00C87E69 /* Bear.mp3 in Resources */,
 				C9172DAD22079BEC009EC08F /* Main.storyboard in Resources */,
+				C9985A352269977F00C87E69 /* Pig.mp3 in Resources */,
+				C9985A302269977F00C87E69 /* Cow.mp3 in Resources */,
+				C9985A3B2269977F00C87E69 /* Dog.mp3 in Resources */,
+				C9985A392269977F00C87E69 /* Rooster.mp3 in Resources */,
+				C9985A252269977F00C87E69 /* Owl.mp3 in Resources */,
+				C9985A3D2269977F00C87E69 /* Horse.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,9 +351,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9172DAA22079BEC009EC08F /* ViewController.swift in Sources */,
+				C9172DAA22079BEC009EC08F /* HomeController.swift in Sources */,
+				C99859D02266E91C00C87E69 /* PlaySound.swift in Sources */,
+				C96E8E9522346416001611AA /* Animal.swift in Sources */,
 				C93C7995220C00CD002BA573 /* CardView.swift in Sources */,
 				C9172DA822079BEC009EC08F /* AppDelegate.swift in Sources */,
+				C99859CE226664FA00C87E69 /* ViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +503,7 @@
 			baseConfigurationReference = E2494D10B07E14A59DC5652A /* Pods-Roar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A2CHK38FTF;
 				INFOPLIST_FILE = Roar/Info.plist;
@@ -371,7 +513,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bambalon.Roar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -381,6 +524,7 @@
 			baseConfigurationReference = B3CE165B305614D52CC63E79 /* Pods-Roar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A2CHK38FTF;
 				INFOPLIST_FILE = Roar/Info.plist;
@@ -390,7 +534,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bambalon.Roar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
