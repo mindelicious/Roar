@@ -21,6 +21,7 @@ class HomeController: UIViewController {
     var initialCGPoint = CGPoint()
     var initialCGRect = CGRect()
     
+    var arrayOfCardviews = [Animal]()
     
     //Configuraton
     let treshold: CGFloat = 80
@@ -50,15 +51,11 @@ class HomeController: UIViewController {
     
     func setupAnimalCards() {
         
-        for animal in animals {
-            animalView.image = UIImage(named: animal.imageName)
-            animalLabel.text = animal.name
-            
+        animals.forEach { (Animal) in
+            arrayOfCardviews.append(<#Animal#>)
+            animalView.image = UIImage(named: Animal.imageName)
+            animalLabel.text = Animal.name
         }
-//        animals.forEach { (Animal) in
-//            animalView.image = UIImage(named: Animal.imageName)
-//            animalLabel.text = Animal.name
-//        }
         
     }
     

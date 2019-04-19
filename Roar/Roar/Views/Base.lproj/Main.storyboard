@@ -89,7 +89,11 @@
                         <action selector="panCardWithRecognizer:" destination="BYZ-38-t0r" id="rzg-nD-hx2"/>
                     </connections>
                 </panGestureRecognizer>
-                <tapGestureRecognizer id="Gxi-Co-Esl"/>
+                <tapGestureRecognizer id="Gxi-Co-Esl">
+                    <connections>
+                        <action selector="handleTap:" destination="BYZ-38-t0r" id="B4v-rJ-Sbk"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-606" y="-12"/>
         </scene>
