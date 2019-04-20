@@ -44,6 +44,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="Lnd-dr-gkb" firstAttribute="leading" secondItem="56c-i4-FRj" secondAttribute="leading" id="2xr-Rj-2mw"/>

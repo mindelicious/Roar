@@ -16,7 +16,6 @@ func playSound() {
     guard let url = Bundle.main.url(forResource: animal?.soundUrl, withExtension: "mp3") else { return }
     do
     {
-        print("🍣", animal?.soundUrl)
         try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
         try AVAudioSession.sharedInstance().setActive(true)
         

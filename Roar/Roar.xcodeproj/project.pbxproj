@@ -43,6 +43,7 @@
 		C9985A3B2269977F00C87E69 /* Dog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A212269977F00C87E69 /* Dog.mp3 */; };
 		C9985A3C2269977F00C87E69 /* Snake.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9985A222269977F00C87E69 /* Snake.wav */; };
 		C9985A3D2269977F00C87E69 /* Horse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A232269977F00C87E69 /* Horse.mp3 */; };
+		C9985A3F226AD52000C87E69 /* AnimalsStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9985A3E226AD52000C87E69 /* AnimalsStock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		C9985A212269977F00C87E69 /* Dog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Dog.mp3; path = ../../Sounds/Dog.mp3; sourceTree = "<group>"; };
 		C9985A222269977F00C87E69 /* Snake.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Snake.wav; path = ../../Sounds/Snake.wav; sourceTree = "<group>"; };
 		C9985A232269977F00C87E69 /* Horse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Horse.mp3; path = ../../Sounds/Horse.mp3; sourceTree = "<group>"; };
+		C9985A3E226AD52000C87E69 /* AnimalsStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsStock.swift; sourceTree = "<group>"; };
 		E2494D10B07E14A59DC5652A /* Pods-Roar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roar/Pods-Roar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				C96E8E9422346416001611AA /* Animal.swift */,
+				C9985A3E226AD52000C87E69 /* AnimalsStock.swift */,
 				C99859CD226664FA00C87E69 /* ViewExtension.swift */,
 				C99859CF2266E91C00C87E69 /* PlaySound.swift */,
 			);
@@ -351,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9985A3F226AD52000C87E69 /* AnimalsStock.swift in Sources */,
 				C9172DAA22079BEC009EC08F /* HomeController.swift in Sources */,
 				C99859D02266E91C00C87E69 /* PlaySound.swift in Sources */,
 				C96E8E9522346416001611AA /* Animal.swift in Sources */,

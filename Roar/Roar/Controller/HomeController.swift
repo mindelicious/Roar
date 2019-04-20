@@ -21,42 +21,38 @@ class HomeController: UIViewController {
     var initialCGPoint = CGPoint()
     var initialCGRect = CGRect()
     
-    var arrayOfCardviews = [Animal]()
+    var allAnimals = AnimalsStock()
+    var animalNumber: Int = 0
     
     //Configuraton
     let treshold: CGFloat = 80
-   
-    let animals:[Animal] = [
-        Animal(name: "Bear", soundUrl: "Bear", imageName: "Bear"),
-        Animal(name: "Cat", soundUrl: "Cat", imageName: "Cat"),
-        Animal(name: "Chicken", soundUrl: "Chicken", imageName: "Chicken"),
-        Animal(name: "Daddy", soundUrl: "Cough", imageName: "Daddy"),
-        Animal(name: "Cow", soundUrl: "Cow", imageName: "Cow"),
-        Animal(name: "Dog", soundUrl: "Dog", imageName: "Dog"),
-        Animal(name: "Donkey", soundUrl: "Donkey", imageName: "Donkey"),
-        Animal(name: "Duck", soundUrl: "Duck", imageName: "Duck"),
-        Animal(name: "Elephant", soundUrl: "Elephant", imageName: "Elephant")
-        
-    
-    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         gradientTextView()
-       
+    
         setupAnimalCards()
+//        let firstAnimal = allAnimals.list.first!
+//        animalView.image  = UIImage(named: firstAnimal.imageName)
+//        animalLabel.text = firstAnimal.name
         
     }
     
     func setupAnimalCards() {
         
-        animals.forEach { (Animal) in
-            arrayOfCardviews.append(<#Animal#>)
-            animalView.image = UIImage(named: Animal.imageName)
-            animalLabel.text = Animal.name
+        if animalNumber <= allAnimals.list.count - 1 {
+        animalLabel.text = allAnimals.list[animalNumber].name
+        animalView.image = UIImage(named: "\(allAnimals.list[animalNumber].imageName)")
+        animalNumber = animalNumber + 1
+       // Can i use forEach method?
+//        .forEach { () in
+//            animalView.image = UIImage(named: Animal.imageName)
+//            animalLabel.text = Animal.name
+        //        }
+        } else {
+            animalNumber = 0
         }
-        
     }
     
 
@@ -80,7 +76,7 @@ class HomeController: UIViewController {
             panChanged(recognizer, card)
         case .ended:
             panEnded(recognizer, card)
-            
+            setupAnimalCards()
         default:
             return
         }
@@ -103,6 +99,7 @@ class HomeController: UIViewController {
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
             if shuldDismissCard {
                 card.frame = CGRect(x: 600 * transitionDirection, y: 0, width: card.frame.width, height: card.frame.height)
+               
             } else {
                 card.transform = CGAffineTransform.identity
                 
@@ -110,11 +107,12 @@ class HomeController: UIViewController {
 
         }) { (_) in
             // Complete animation,bringing card back
-//                        card.center = self.initialCGPoint
+                        card.center = self.initialCGPoint
             card.transform = CGAffineTransform.identity
             card.frame = self.initialCGRect
-
-
+            
+            
+            
         }
     }
 
