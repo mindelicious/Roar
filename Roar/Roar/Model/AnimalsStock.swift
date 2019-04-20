@@ -24,6 +24,5 @@ class AnimalsStock {
         list.append(Animal(name: "Donkey", soundUrl: "Donkey", imageName: "Donkey"))
         list.append(Animal(name: "Duck", soundUrl: "Duck", imageName: "Duck"))
         list.append(Animal(name: "Elephant", soundUrl: "Elephant", imageName: "Elephant"))
-        
     }
 }
