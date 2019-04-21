@@ -33,6 +33,7 @@ class HomeController: UIViewController {
         gradientTextView()
     
         setupAnimalCards()
+        print(animalNumber)
 //        let firstAnimal = allAnimals.list.first!
 //        animalView.image  = UIImage(named: firstAnimal.imageName)
 //        animalLabel.text = firstAnimal.name
@@ -41,18 +42,16 @@ class HomeController: UIViewController {
     
     func setupAnimalCards() {
         
+        
         if animalNumber <= allAnimals.list.count - 1 {
+            
         animalLabel.text = allAnimals.list[animalNumber].name
         animalView.image = UIImage(named: "\(allAnimals.list[animalNumber].imageName)")
-        animalNumber = animalNumber + 1
-       // Can i use forEach method?
-//        .forEach { () in
-//            animalView.image = UIImage(named: Animal.imageName)
-//            animalLabel.text = Animal.name
-        //        }
-        } else {
-            animalNumber = 0
+       
+        } else if animalNumber == allAnimals.list.endIndex {
+            print("🍣", animalNumber)
         }
+        print("🥃", animalNumber)
     }
     
 
@@ -60,7 +59,8 @@ class HomeController: UIViewController {
     @IBAction func handleTap(_ recognizer: UITapGestureRecognizer) {
         if recognizer.state == .ended {
             cardView.pulseCard()
-            playSound()
+//            playSound()
+            
         }
     }
     
@@ -76,7 +76,6 @@ class HomeController: UIViewController {
             panChanged(recognizer, card)
         case .ended:
             panEnded(recognizer, card)
-            setupAnimalCards()
         default:
             return
         }
@@ -89,6 +88,7 @@ class HomeController: UIViewController {
 
         let rotationTransformation = CGAffineTransform(rotationAngle: angle)
         card.transform = rotationTransformation.translatedBy(x: panning.x, y: panning.y)
+        
     }
 
     fileprivate func panEnded(_ recognizer: UIPanGestureRecognizer, _ card: UIView) {
@@ -99,7 +99,10 @@ class HomeController: UIViewController {
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
             if shuldDismissCard {
                 card.frame = CGRect(x: 600 * transitionDirection, y: 0, width: card.frame.width, height: card.frame.height)
-               
+        
+                 self.animalNumber = self.animalNumber + 1
+              
+ 
             } else {
                 card.transform = CGAffineTransform.identity
                 
@@ -107,12 +110,10 @@ class HomeController: UIViewController {
 
         }) { (_) in
             // Complete animation,bringing card back
-                        card.center = self.initialCGPoint
+//                card.center = self.initialCGPoint
             card.transform = CGAffineTransform.identity
             card.frame = self.initialCGRect
-            
-            
-            
+            self.setupAnimalCards()
         }
     }
 

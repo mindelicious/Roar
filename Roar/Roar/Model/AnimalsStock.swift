@@ -19,10 +19,10 @@ class AnimalsStock {
         
         list.append(Animal(name: "Cat", soundUrl: "Cat", imageName: "Cat"))
         list.append(Animal(name: "Chicken", soundUrl: "Chicken", imageName: "Chicken"))
-        list.append(Animal(name: "Cow", soundUrl: "Cow", imageName: "Cow"))
-        list.append(Animal(name: "Dog", soundUrl: "Dog", imageName: "Dog"))
-        list.append(Animal(name: "Donkey", soundUrl: "Donkey", imageName: "Donkey"))
-        list.append(Animal(name: "Duck", soundUrl: "Duck", imageName: "Duck"))
-        list.append(Animal(name: "Elephant", soundUrl: "Elephant", imageName: "Elephant"))
+//        list.append(Animal(name: "Cow", soundUrl: "Cow", imageName: "Cow"))
+//        list.append(Animal(name: "Dog", soundUrl: "Dog", imageName: "Dog"))
+//        list.append(Animal(name: "Donkey", soundUrl: "Donkey", imageName: "Donkey"))
+//        list.append(Animal(name: "Duck", soundUrl: "Duck", imageName: "Duck"))
+//        list.append(Animal(name: "Elephant", soundUrl: "Elephant", imageName: "Elephant"))
     }
 }
