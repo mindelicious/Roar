@@ -49,7 +49,10 @@ class HomeController: UIViewController {
         animalView.image = UIImage(named: "\(allAnimals.list[animalNumber].imageName)")
        
         } else if animalNumber == allAnimals.list.endIndex {
-            print("🍣", animalNumber)
+            
+           animalLabel.text = allAnimals.list[0].name
+             animalView.image = UIImage(named: "\(allAnimals.list[0].imageName)")
+            animalNumber = 0
         }
         print("🥃", animalNumber)
     }
