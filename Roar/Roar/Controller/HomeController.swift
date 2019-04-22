@@ -54,7 +54,7 @@ class HomeController: UIViewController {
              animalView.image = UIImage(named: "\(allAnimals.list[0].imageName)")
             animalNumber = 0
         }
-        print("🥃", animalNumber)
+       
     }
     
 
@@ -62,7 +62,7 @@ class HomeController: UIViewController {
     @IBAction func handleTap(_ recognizer: UITapGestureRecognizer) {
         if recognizer.state == .ended {
             cardView.pulseCard()
-//            playSound()
+            playSound()
             
         }
     }
@@ -104,7 +104,7 @@ class HomeController: UIViewController {
                 card.frame = CGRect(x: 600 * transitionDirection, y: 0, width: card.frame.width, height: card.frame.height)
         
                  self.animalNumber = self.animalNumber + 1
-              
+                 stopPlaying()
  
             } else {
                 card.transform = CGAffineTransform.identity

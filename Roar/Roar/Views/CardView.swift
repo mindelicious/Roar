@@ -18,7 +18,7 @@ extension HomeController {
         textView.backgroundColor = UIColor.black.withAlphaComponent(0.75)
         gradientLayer.frame = textView.bounds
         gradientLayer.colors = [UIColor.clear.cgColor, UIColor.clear.cgColor, UIColor.black.cgColor, UIColor.black.cgColor]
-        gradientLayer.locations = [0, 0.1, 0.5, 1]
+//        gradientLayer.locations = [0, 0.2, 0.2, 1]
         textView.layer.mask = gradientLayer
         
     }

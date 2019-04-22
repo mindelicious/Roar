@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56c-i4-FRj" userLabel="Cards View">
-                                <rect key="frame" x="26" y="94" width="323" height="484"/>
+                                <rect key="frame" x="26" y="104" width="323" height="484"/>
                                 <subviews>
                                     <imageView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wIx-9w-Qeh">
                                         <rect key="frame" x="0.0" y="0.0" width="323" height="484"/>
@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="314.66666666666669" width="323" height="169.33333333333331"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bear" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WW-DR-Jv7">
-                                                <rect key="frame" x="125.33333333333334" y="75" width="72.333333333333343" height="86.333333333333314"/>
+                                                <rect key="frame" x="125.66666666666666" y="99.999999999999929" width="72" height="61.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
                                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -40,7 +40,7 @@
                                         <constraints>
                                             <constraint firstItem="5WW-DR-Jv7" firstAttribute="bottom" secondItem="Lnd-dr-gkb" secondAttribute="bottomMargin" id="djm-tx-vFH"/>
                                             <constraint firstItem="5WW-DR-Jv7" firstAttribute="centerX" secondItem="Lnd-dr-gkb" secondAttribute="centerX" id="eA5-Tg-3cT"/>
-                                            <constraint firstItem="5WW-DR-Jv7" firstAttribute="top" secondItem="Lnd-dr-gkb" secondAttribute="top" constant="75" id="u4G-2u-5Gw"/>
+                                            <constraint firstItem="5WW-DR-Jv7" firstAttribute="top" secondItem="Lnd-dr-gkb" secondAttribute="top" constant="100" id="u4G-2u-5Gw"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -71,8 +71,8 @@
                         <color key="backgroundColor" red="0.81510418653488159" green="0.81510418653488159" blue="0.81510418653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="56c-i4-FRj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="WdD-wY-rVP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="56c-i4-FRj" secondAttribute="bottom" constant="200" id="g9k-wB-njd"/>
-                            <constraint firstItem="56c-i4-FRj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="reC-te-VAC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="56c-i4-FRj" secondAttribute="bottom" constant="190" id="g9k-wB-njd"/>
+                            <constraint firstItem="56c-i4-FRj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="reC-te-VAC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="56c-i4-FRj" secondAttribute="trailing" constant="26" id="wfk-3h-8yL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
