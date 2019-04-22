@@ -63,7 +63,7 @@ class HomeController: UIViewController {
         if recognizer.state == .ended {
             cardView.pulseCard()
             playSound()
-            
+            //sound
         }
     }
     
