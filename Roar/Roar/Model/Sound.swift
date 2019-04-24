@@ -10,7 +10,6 @@ import Foundation
 import AVFoundation
 
 var player = AVAudioPlayer()
-var animal = AnimalsStock()
 
 func playSound() {
   
