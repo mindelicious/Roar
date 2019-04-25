@@ -9,27 +9,36 @@
 import Foundation
 import AVFoundation
 
-var player = AVAudioPlayer()
-var animal = AnimalsStock()
+var player : AVAudioPlayer?
 
 func playSound() {
   
-    do {
-        player = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "Bear", ofType: "mp3")!))
-        player.play()
-    }
-    catch {
-        print(error)
+    func playSound()
+    {
+        guard let url = Bundle.main.url(forResource: self.soundUrl, withExtension: "mp3") else { return }
+        do
+        {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            player = try AVAudioPlayer(contentsOf: url)
+            guard let player = player else { return }
+            
+            player.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
 }
 
-func stopPlaying() {
-    
-    if player.isPlaying {
-        player.stop()
-    }
-    
-    }
+
+//func stopPlaying() {
+//
+//    if player.isPlaying {
+//        player.stop()
+//    }
+//
+//    }
 
 
 

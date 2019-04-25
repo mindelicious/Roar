@@ -34,9 +34,6 @@ class HomeController: UIViewController {
     
         setupAnimalCards()
         print(animalNumber)
-//        let firstAnimal = allAnimals.list.first!
-//        animalView.image  = UIImage(named: firstAnimal.imageName)
-//        animalLabel.text = firstAnimal.name
         
     }
     
@@ -50,8 +47,8 @@ class HomeController: UIViewController {
        
         } else if animalNumber == allAnimals.list.endIndex {
             
-           animalLabel.text = allAnimals.list[0].name
-             animalView.image = UIImage(named: "\(allAnimals.list[0].imageName)")
+            animalLabel.text = allAnimals.list[0].name
+            animalView.image = UIImage(named: "\(allAnimals.list[0].imageName)")
             animalNumber = 0
         }
        
@@ -62,12 +59,13 @@ class HomeController: UIViewController {
     @IBAction func handleTap(_ recognizer: UITapGestureRecognizer) {
         if recognizer.state == .ended {
             cardView.pulseCard()
-            playSound()
-            //sound
+            for _ in allAnimals.list {
+                playSound()
+            }
+            
+            
         }
     }
-    
-
     
     // MARK: - PanGesture
     @IBAction func panCard(recognizer: UIPanGestureRecognizer) {
@@ -83,7 +81,7 @@ class HomeController: UIViewController {
             return
         }
     }
-
+    // PanChanged
     fileprivate func panChanged(_ recognizer: UIPanGestureRecognizer, _ card: UIView) {
         let panning = recognizer.translation(in: view)
         let degrees : CGFloat = panning.x / 20
@@ -94,6 +92,7 @@ class HomeController: UIViewController {
         
     }
 
+    // PanEnded
     fileprivate func panEnded(_ recognizer: UIPanGestureRecognizer, _ card: UIView) {
 
         let transitionDirection: CGFloat = recognizer.translation(in: view).x > 0 ? 1 : -1

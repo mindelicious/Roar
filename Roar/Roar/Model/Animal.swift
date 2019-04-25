@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import AVFoundation
 
 struct Animal {
     let name: String

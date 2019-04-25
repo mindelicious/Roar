@@ -10,7 +10,6 @@ import UIKit
 
 extension HomeController {
     
-    
     // MARK: - Gradient On a textView
     func gradientTextView() {
         
