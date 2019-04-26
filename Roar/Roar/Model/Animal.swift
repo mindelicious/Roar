@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import AVFoundation
 
 class Animal {
@@ -20,30 +21,29 @@ class Animal {
         self.soundUrl = soundUrl
         self.imageName = imageName
     }
-    // Move func to seperate file
+    
     func playSound() {
-        guard let url = Bundle.main.url(forResource: self.soundUrl, withExtension: "mp3") else { return }
+        guard let url = Bundle.main.url(forResource: soundUrl, withExtension: "mp3") else { return }
         do
         {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
             try AVAudioSession.sharedInstance().setActive(true)
-
+            
             player = try AVAudioPlayer(contentsOf: url)
             guard let player = player else { return }
-
+            
             player.play()
         } catch let error {
             print(error.localizedDescription)
         }
     }
-
+    
     func stopSound() {
         if player != nil {
-           player?.stop()
+            player?.stop()
         }
-
+        
     }
-    
 }
 
 

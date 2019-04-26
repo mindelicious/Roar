@@ -52,9 +52,7 @@ class HomeController: UIViewController {
         
         
     }
-    
-    
-    
+
     @IBAction func handleTap(_ recognizer: UITapGestureRecognizer) {
         if recognizer.state == .ended {
             cardView.pulseCard()
@@ -115,6 +113,7 @@ class HomeController: UIViewController {
             self.setupAnimalCards()
         }
     }
+    
     
     
 }
