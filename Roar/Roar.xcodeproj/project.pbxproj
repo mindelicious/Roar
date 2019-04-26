@@ -14,7 +14,7 @@
 		C9172DAF22079BEE009EC08F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9172DAE22079BEE009EC08F /* Assets.xcassets */; };
 		C9172DB222079BEE009EC08F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9172DB022079BEE009EC08F /* LaunchScreen.storyboard */; };
 		C93C7995220C00CD002BA573 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93C7994220C00CD002BA573 /* CardView.swift */; };
-		C96E8E9522346416001611AA /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96E8E9422346416001611AA /* Animal.swift */; };
+		C9413A132271852A00440347 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9413A122271852A00440347 /* Animal.swift */; };
 		C99859CE226664FA00C87E69 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99859CD226664FA00C87E69 /* ViewExtension.swift */; };
 		C99859D02266E91C00C87E69 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99859CF2266E91C00C87E69 /* Sound.swift */; };
 		C9985A242269977F00C87E69 /* Lion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A0A2269977D00C87E69 /* Lion.mp3 */; };
@@ -57,7 +57,7 @@
 		C9172DB122079BEE009EC08F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9172DB322079BEE009EC08F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93C7994220C00CD002BA573 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		C96E8E9422346416001611AA /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		C9413A122271852A00440347 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		C99859CD226664FA00C87E69 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		C99859CF2266E91C00C87E69 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		C9985A0A2269977D00C87E69 /* Lion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Lion.mp3; path = ../../Sounds/Lion.mp3; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		C96E8E9322346321001611AA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C96E8E9422346416001611AA /* Animal.swift */,
+				C9413A122271852A00440347 /* Animal.swift */,
 				C9985A3E226AD52000C87E69 /* AnimalsStock.swift */,
 				C99859CD226664FA00C87E69 /* ViewExtension.swift */,
 				C99859CF2266E91C00C87E69 /* Sound.swift */,
@@ -357,8 +357,8 @@
 				C9985A3F226AD52000C87E69 /* AnimalsStock.swift in Sources */,
 				C9172DAA22079BEC009EC08F /* HomeController.swift in Sources */,
 				C99859D02266E91C00C87E69 /* Sound.swift in Sources */,
-				C96E8E9522346416001611AA /* Animal.swift in Sources */,
 				C93C7995220C00CD002BA573 /* CardView.swift in Sources */,
+				C9413A132271852A00440347 /* Animal.swift in Sources */,
 				C9172DA822079BEC009EC08F /* AppDelegate.swift in Sources */,
 				C99859CE226664FA00C87E69 /* ViewExtension.swift in Sources */,
 			);
