@@ -37,7 +37,6 @@ class Animal {
             print(error.localizedDescription)
         }
     }
-    
     func stopSound() {
         if player != nil {
             player?.stop()
