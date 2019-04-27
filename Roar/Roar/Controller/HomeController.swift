@@ -7,12 +7,9 @@
 //
 
 import UIKit
-import AVFoundation
-
 
 class HomeController: UIViewController {
     
-    // let animalCardDeckView = UIView()
     @IBOutlet weak var animalView: UIImageView!
     @IBOutlet weak var textView: UIView!
     @IBOutlet weak var animalLabel: UILabel!
@@ -23,7 +20,6 @@ class HomeController: UIViewController {
     var allAnimals = AnimalsStock()
     var animalNumber: Int = 0
     
-    //Configuraton
     let treshold: CGFloat = 80
     
     override func viewDidLoad() {
@@ -35,6 +31,7 @@ class HomeController: UIViewController {
     }
     
     func setupAnimalCards() {
+        
         
         if animalNumber <= allAnimals.list.count - 1 {
 
@@ -53,8 +50,7 @@ class HomeController: UIViewController {
     @IBAction func handleTap(_ recognizer: UITapGestureRecognizer) {
         if recognizer.state == .ended {
             cardView.pulseCard()
-            let animalSound = allAnimals.list[animalNumber].soundUrl
-            playSound(soundUrl: animalSound)
+            playSound(soundUrl: allAnimals.list[animalNumber].soundUrl)
             
             
             
