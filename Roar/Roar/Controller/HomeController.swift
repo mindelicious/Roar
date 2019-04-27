@@ -18,7 +18,6 @@ class HomeController: UIViewController {
     @IBOutlet weak var animalLabel: UILabel!
     @IBOutlet weak var cardView: UIView!
     
-    var initialCGPoint = CGPoint()
     var initialCGRect = CGRect()
     
     var allAnimals = AnimalsStock()
@@ -37,26 +36,27 @@ class HomeController: UIViewController {
     
     func setupAnimalCards() {
         
-        
         if animalNumber <= allAnimals.list.count - 1 {
-            
+
             animalLabel.text = allAnimals.list[animalNumber].name
             animalView.image = UIImage(named: "\(allAnimals.list[animalNumber].imageName)")
-            
+
         } else if animalNumber == allAnimals.list.endIndex {
-            
+
             animalLabel.text = allAnimals.list[0].name
             animalView.image = UIImage(named: "\(allAnimals.list[0].imageName)")
             animalNumber = 0
         }
-        
-        
+
     }
 
     @IBAction func handleTap(_ recognizer: UITapGestureRecognizer) {
         if recognizer.state == .ended {
             cardView.pulseCard()
-            allAnimals.list[animalNumber].playSound()
+            let animalSound = allAnimals.list[animalNumber].soundUrl
+            playSound(soundUrl: animalSound)
+            
+            
             
         }
     }
@@ -96,21 +96,25 @@ class HomeController: UIViewController {
             if shuldDismissCard {
                 card.frame = CGRect(x: 600 * transitionDirection, y: 0, width: card.frame.width, height: card.frame.height)
                 
-                self.allAnimals.list[self.animalNumber].stopSound()
+                stopSound()
                 self.animalNumber = self.animalNumber + 1
                 
             } else {
              // Card going back smoothly but have a lag when want to move it again
 //                card.transform = CGAffineTransform.identity
+                
+
             }
             
         }) { (_) in
             // Complete animation,bringing card back
-//             card.center = self.initialCGPoint
+           
             card.transform = CGAffineTransform.identity
 //            card.removeFromSuperview()
 //            card.frame = self.initialCGRect
-            self.setupAnimalCards()
+             self.setupAnimalCards()
+            
+           
         }
     }
     
