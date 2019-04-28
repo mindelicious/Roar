@@ -32,9 +32,8 @@ class HomeController: UIViewController {
     
     func setupAnimalCards() {
         
-        
         if animalNumber <= allAnimals.list.count - 1 {
-
+            
             animalLabel.text = allAnimals.list[animalNumber].name
             animalView.image = UIImage(named: "\(allAnimals.list[animalNumber].imageName)")
 
