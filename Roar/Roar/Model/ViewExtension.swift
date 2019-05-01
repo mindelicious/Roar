@@ -20,7 +20,6 @@ extension UIView {
         pulse.repeatCount = 1
         pulse.initialVelocity = -5
         pulse.damping = 0
-        
         layer.add(pulse, forKey: nil)
         
     }
