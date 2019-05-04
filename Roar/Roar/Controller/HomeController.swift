@@ -30,6 +30,7 @@ class HomeController: UIViewController {
         
     }
     
+    
     func setupAnimalCards() {
         
         if animalNumber <= allAnimals.list.count - 1 {
