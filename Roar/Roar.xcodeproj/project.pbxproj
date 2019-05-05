@@ -227,7 +227,6 @@
 				C9172DA022079BEC009EC08F /* Sources */,
 				C9172DA122079BEC009EC08F /* Frameworks */,
 				C9172DA222079BEC009EC08F /* Resources */,
-				39F56B927AB9D713E033211A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,26 +311,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		39F56B927AB9D713E033211A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Roar/Pods-Roar-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework",
-				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Koloda.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Roar/Pods-Roar-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CD26FC2E28301298D8D23FBB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

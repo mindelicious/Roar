@@ -64,6 +64,8 @@ class HomeController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.animalView.image = UIImage(named: "\(animalObject.imageName)")
         cell.animalLabel.text = animalObject.name
         
+       
+        
         return cell
     }
 
