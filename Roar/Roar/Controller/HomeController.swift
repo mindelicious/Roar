@@ -64,7 +64,18 @@ class HomeController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.animalView.image = UIImage(named: "\(animalObject.imageName)")
         cell.animalLabel.text = animalObject.name
         
-       
+        //Creating Shadow and modify card
+        cell.contentView.layer.cornerRadius = 8.0
+        cell.contentView.layer.borderWidth = 1.0
+        cell.contentView.layer.borderColor = UIColor.clear.cgColor
+        cell.contentView.layer.masksToBounds = false
+        cell.layer.shadowColor = UIColor.gray.cgColor
+        cell.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        cell.layer.cornerRadius = 10.0
+        cell.layer.shadowRadius = 10.0
+        cell.layer.shadowOpacity = 1.0
+        cell.layer.masksToBounds = false
+        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
         
         return cell
     }
