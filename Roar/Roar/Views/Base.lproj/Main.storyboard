@@ -18,85 +18,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="56c-i4-FRj" userLabel="Cards View">
-                                <rect key="frame" x="26" y="104" width="323" height="484"/>
-                                <subviews>
-                                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wIx-9w-Qeh">
-                                        <rect key="frame" x="0.0" y="0.0" width="323" height="484"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <gestureRecognizers/>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lnd-dr-gkb" userLabel="Animal Name View">
-                                        <rect key="frame" x="0.0" y="314.66666666666669" width="323" height="169.33333333333331"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bear" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5WW-DR-Jv7">
-                                                <rect key="frame" x="125.66666666666666" y="99.999999999999929" width="72" height="61.333333333333329"/>
-                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
-                                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <constraints>
-                                            <constraint firstItem="5WW-DR-Jv7" firstAttribute="bottom" secondItem="Lnd-dr-gkb" secondAttribute="bottomMargin" id="djm-tx-vFH"/>
-                                            <constraint firstItem="5WW-DR-Jv7" firstAttribute="centerX" secondItem="Lnd-dr-gkb" secondAttribute="centerX" id="eA5-Tg-3cT"/>
-                                            <constraint firstItem="5WW-DR-Jv7" firstAttribute="top" secondItem="Lnd-dr-gkb" secondAttribute="top" constant="100" id="u4G-2u-5Gw"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IBx-cA-8gd" userLabel="Card Collection View">
+                                <rect key="frame" x="26" y="154" width="323" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstItem="Lnd-dr-gkb" firstAttribute="leading" secondItem="56c-i4-FRj" secondAttribute="leading" id="2xr-Rj-2mw"/>
-                                    <constraint firstAttribute="trailing" secondItem="wIx-9w-Qeh" secondAttribute="trailing" id="D5v-ie-Fjz"/>
-                                    <constraint firstItem="Lnd-dr-gkb" firstAttribute="height" secondItem="56c-i4-FRj" secondAttribute="height" multiplier="0.35" id="OY0-mR-cyl"/>
-                                    <constraint firstAttribute="bottom" secondItem="Lnd-dr-gkb" secondAttribute="bottom" id="Pe8-gB-0Yj"/>
-                                    <constraint firstAttribute="bottom" secondItem="wIx-9w-Qeh" secondAttribute="bottom" id="Uwd-2B-a3T"/>
-                                    <constraint firstAttribute="trailing" secondItem="Lnd-dr-gkb" secondAttribute="trailing" id="aOw-R3-LQR"/>
-                                    <constraint firstItem="wIx-9w-Qeh" firstAttribute="leading" secondItem="56c-i4-FRj" secondAttribute="leading" id="pxK-Ff-u2l"/>
-                                    <constraint firstItem="wIx-9w-Qeh" firstAttribute="top" secondItem="56c-i4-FRj" secondAttribute="top" id="tKz-Ux-PfA"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GLU-nK-syh">
+                                    <size key="itemSize" width="299" height="489"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AnimalCell" id="1ru-ht-tom" userLabel="AnimalCell" customClass="AnimalCardCell" customModule="Roar" customModuleProvider="target">
+                                        <rect key="frame" x="12" y="0.0" width="299" height="489"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="299" height="489"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="szJ-8F-Xw6">
+                                                    <rect key="frame" x="20" y="0.0" width="279" height="273"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekg-kI-Vba">
+                                                    <rect key="frame" x="0.0" y="364" width="299" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="animalLabel" destination="ekg-kI-Vba" id="xeR-ss-lI7"/>
+                                            <outlet property="animalView" destination="szJ-8F-Xw6" id="h1p-7V-pmV"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="QGD-1p-daA" appends="YES" id="0Qh-15-KZH"/>
-                                    <outletCollection property="gestureRecognizers" destination="Gxi-Co-Esl" appends="YES" id="dKx-BV-5qP"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="w7S-kk-kMX"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="rpk-S0-yup"/>
                                 </connections>
-                            </view>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.81510418653488159" green="0.81510418653488159" blue="0.81510418653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="56c-i4-FRj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="WdD-wY-rVP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="56c-i4-FRj" secondAttribute="bottom" constant="190" id="g9k-wB-njd"/>
-                            <constraint firstItem="56c-i4-FRj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="reC-te-VAC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="56c-i4-FRj" secondAttribute="trailing" constant="26" id="wfk-3h-8yL"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="animalLabel" destination="5WW-DR-Jv7" id="J1F-6e-uO6"/>
-                        <outlet property="animalView" destination="wIx-9w-Qeh" id="iQA-AE-7kW"/>
-                        <outlet property="cardView" destination="56c-i4-FRj" id="GS7-9P-Y9G"/>
-                        <outlet property="textView" destination="Lnd-dr-gkb" id="NLZ-rJ-jGK"/>
+                        <outlet property="cardCollectionView" destination="IBx-cA-8gd" id="HMP-Bb-xIi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="QGD-1p-daA" userLabel="Card Pan Gesture Recognizer">
-                    <connections>
-                        <action selector="panCardWithRecognizer:" destination="BYZ-38-t0r" id="rzg-nD-hx2"/>
-                    </connections>
-                </panGestureRecognizer>
-                <tapGestureRecognizer id="Gxi-Co-Esl">
-                    <connections>
-                        <action selector="handleTap:" destination="BYZ-38-t0r" id="B4v-rJ-Sbk"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="QGD-1p-daA" userLabel="Card Pan Gesture Recognizer"/>
+                <tapGestureRecognizer id="Gxi-Co-Esl"/>
             </objects>
-            <point key="canvasLocation" x="-606" y="-12"/>
+            <point key="canvasLocation" x="-607.20000000000005" y="-12.561576354679804"/>
         </scene>
     </scenes>
 </document>

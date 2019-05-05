@@ -7,17 +7,17 @@
 //
 
 import UIKit
+import Foundation
 
-class HomeController: UIViewController {
+class HomeController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    @IBOutlet weak var animalView: UIImageView!
-    @IBOutlet weak var textView: UIView!
-    @IBOutlet weak var animalLabel: UILabel!
-    @IBOutlet weak var cardView: UIView!
+    var animalCard = AnimalCardCell()
     
+    @IBOutlet weak var cardCollectionView: UICollectionView!
     var initialCGRect = CGRect()
     
     var allAnimals = AnimalsStock()
+    var allAnimalArray = [AnimalsStock]()
     var animalNumber: Int = 0
     
     let treshold: CGFloat = 80
@@ -25,31 +25,51 @@ class HomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        gradientTextView()
-        setupAnimalCards()
+        cardCollectionView.delegate = self
+        cardCollectionView.dataSource = self
+        
+//        gradientTextView()
+//        setupAnimalCards()
         
     }
     
     
-    func setupAnimalCards() {
-        
-        if animalNumber <= allAnimals.list.count - 1 {
-            
-            animalLabel.text = allAnimals.list[animalNumber].name
-            animalView.image = UIImage(named: "\(allAnimals.list[animalNumber].imageName)")
-
-        } else if animalNumber == allAnimals.list.endIndex {
-
-            animalLabel.text = allAnimals.list[0].name
-            animalView.image = UIImage(named: "\(allAnimals.list[0].imageName)")
-            animalNumber = 0
+//    func setupAnimalCards() {
+//
+//        if animalNumber <= allAnimals.list.count - 1 {
+//
+//           animalCard.animalLabel.text = allAnimals.list[animalNumber].name
+//            animalCard.animalView.image = UIImage(named: "\(allAnimals.list[animalNumber].imageName)")
+//
+//        } else if animalNumber == allAnimals.list.endIndex {
+//
+//            animalCard.animalLabel.text = allAnimals.list[0].name
+//            animalCard.animalView.image = UIImage(named: "\(allAnimals.list[0].imageName)")
+//            animalNumber = 0
+//        }
+//
+//    }
+    
+    //MARK: - UICollectiovViewDataSource
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return allAnimals.list.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: animalCard.identifier, for: indexPath) as? AnimalCardCell else {
+            return UICollectionViewCell()
         }
-
+        let animalObject = allAnimals.list[indexPath.row]
+        
+        cell.animalView.image = UIImage(named: "\(animalObject.imageName)")
+        cell.animalLabel.text = animalObject.name
+        
+        return cell
     }
 
     @IBAction func handleTap(_ recognizer: UITapGestureRecognizer) {
         if recognizer.state == .ended {
-            cardView.pulseCard()
+//            cardView.pulseCard()
             playSound(soundUrl: allAnimals.list[animalNumber].soundUrl)
             
             
@@ -108,7 +128,7 @@ class HomeController: UIViewController {
             card.transform = CGAffineTransform.identity
 //            card.removeFromSuperview()
 //            card.frame = self.initialCGRect
-             self.setupAnimalCards()
+//             self.setupAnimalCards()
             
            
         }
