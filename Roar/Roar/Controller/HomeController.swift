@@ -12,15 +12,17 @@ import Foundation
 class HomeController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     var animalCard = AnimalCardCell()
+   
     
     @IBOutlet weak var cardCollectionView: UICollectionView!
-    var initialCGRect = CGRect()
+   
     
     var allAnimals = AnimalsStock()
     var allAnimalArray = [AnimalsStock]()
     var animalNumber: Int = 0
     
     let treshold: CGFloat = 80
+    var initialCGRect = CGRect()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +32,7 @@ class HomeController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
 //        gradientTextView()
 //        setupAnimalCards()
-        
+   
     }
     
     
@@ -67,7 +69,8 @@ class HomeController: UIViewController, UICollectionViewDelegate, UICollectionVi
         //Creating Shadow and modify card
         cell.contentView.layer.cornerRadius = 8.0
         cell.contentView.layer.borderWidth = 1.0
-        cell.contentView.layer.borderColor = UIColor.clear.cgColor
+        //border color
+        cell.contentView.layer.borderColor = UIColor.black.cgColor
         cell.contentView.layer.masksToBounds = false
         cell.layer.shadowColor = UIColor.gray.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 1.0)
@@ -77,18 +80,27 @@ class HomeController: UIViewController, UICollectionViewDelegate, UICollectionVi
         cell.layer.masksToBounds = false
         cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
         
+       
+        
         return cell
     }
+    
+   
+    
 
     @IBAction func handleTap(_ recognizer: UITapGestureRecognizer) {
         if recognizer.state == .ended {
 //            cardView.pulseCard()
-            playSound(soundUrl: allAnimals.list[animalNumber].soundUrl)
-            
+//            playSound(soundUrl: allAnimals.list[animalNumber].soundUrl)
+//
+            print("🍣", "trirurur")
             
             
         }
     }
+    
+  
+
     
     // MARK: - PanGesture
     @IBAction func panCard(recognizer: UIPanGestureRecognizer) {
@@ -146,8 +158,6 @@ class HomeController: UIViewController, UICollectionViewDelegate, UICollectionVi
            
         }
     }
-    
-    
     
 }
 

@@ -14,6 +14,7 @@
 		C9172DAF22079BEE009EC08F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9172DAE22079BEE009EC08F /* Assets.xcassets */; };
 		C9172DB222079BEE009EC08F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9172DB022079BEE009EC08F /* LaunchScreen.storyboard */; };
 		C91B0D37227E9AA0007D7624 /* AnimalCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B0D36227E9AA0007D7624 /* AnimalCardCell.swift */; };
+		C91B0D3B227EB50B007D7624 /* CardStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B0D3A227EB50B007D7624 /* CardStackLayout.swift */; };
 		C93C7995220C00CD002BA573 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93C7994220C00CD002BA573 /* CardView.swift */; };
 		C9413A132271852A00440347 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9413A122271852A00440347 /* Animal.swift */; };
 		C9413A1F2274DD0200440347 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9413A1E2274DD0200440347 /* Sound.swift */; };
@@ -58,6 +59,7 @@
 		C9172DB122079BEE009EC08F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9172DB322079BEE009EC08F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C91B0D36227E9AA0007D7624 /* AnimalCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCardCell.swift; sourceTree = "<group>"; };
+		C91B0D3A227EB50B007D7624 /* CardStackLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackLayout.swift; sourceTree = "<group>"; };
 		C93C7994220C00CD002BA573 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C9413A122271852A00440347 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		C9413A1E2274DD0200440347 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				C9172DAB22079BEC009EC08F /* Main.storyboard */,
 				C93C7994220C00CD002BA573 /* CardView.swift */,
 				C91B0D36227E9AA0007D7624 /* AnimalCardCell.swift */,
+				C91B0D3A227EB50B007D7624 /* CardStackLayout.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 			files = (
 				C9985A3F226AD52000C87E69 /* AnimalsStock.swift in Sources */,
 				C9172DAA22079BEC009EC08F /* HomeController.swift in Sources */,
+				C91B0D3B227EB50B007D7624 /* CardStackLayout.swift in Sources */,
 				C93C7995220C00CD002BA573 /* CardView.swift in Sources */,
 				C9413A132271852A00440347 /* Animal.swift in Sources */,
 				C9172DA822079BEC009EC08F /* AppDelegate.swift in Sources */,
