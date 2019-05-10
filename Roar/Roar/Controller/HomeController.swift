@@ -35,11 +35,7 @@ class HomeController: UIViewController {
 //        gradientTextView()
 //        setupAnimalCards()
 
-        view.addSubview(cardDeckView)
-        //centerign
-        
-        cardDeckView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 50, left: 10, bottom: 100, right: 10))
-      
+        setupLayout()
         setupCards()
     }
     
@@ -50,6 +46,12 @@ class HomeController: UIViewController {
         cardView.fillSuperview()
     }
     
+    func setupLayout() {
+        view.addSubview(cardDeckView)
+        //overalStackView.axis = .vertical
+        cardDeckView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 50, left: 12, bottom: 120, right: 12))
+        
+    }
     
 //    func setupAnimalCards() {
 //

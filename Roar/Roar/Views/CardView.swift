@@ -14,11 +14,39 @@ class CardView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        //custom drawing code
-        backgroundColor = .white
+        
+        backgroundColor = .gray
+        layer.cornerRadius = 10
+        imageView.contentMode = .scaleAspectFit
         
         addSubview(imageView)
         imageView.fillSuperview()
+        
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(panCard))
+        addGestureRecognizer(panGesture)
+    }
+    
+    @objc fileprivate func panCard(recognizer: UIPanGestureRecognizer) {
+        switch recognizer.state {
+        case .changed:
+            panChanged(recognizer)
+        case .ended:
+            panEnded()
+        default:
+            ()
+        }
+    }
+    
+    fileprivate func panChanged(_ recognizer: UIPanGestureRecognizer) {
+        let translation = recognizer.translation(in: nil)
+        self.transform = CGAffineTransform(translationX: translation.x, y: translation.y)
+    }
+    
+    fileprivate func panEnded() {
+        UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.1, options: .curveEaseOut, animations: {
+            self.transform = .identity
+        }) { (_) in
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
