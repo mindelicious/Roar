@@ -15,8 +15,7 @@
 		C9172DB222079BEE009EC08F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9172DB022079BEE009EC08F /* LaunchScreen.storyboard */; };
 		C91B0D37227E9AA0007D7624 /* AnimalCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B0D36227E9AA0007D7624 /* AnimalCardCell.swift */; };
 		C91B0D3B227EB50B007D7624 /* CardStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B0D3A227EB50B007D7624 /* CardStackLayout.swift */; };
-		C91B0D63228210CB007D7624 /* Extension&UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B0D62228210CB007D7624 /* Extension&UIView.swift */; };
-		C93C7995220C00CD002BA573 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93C7994220C00CD002BA573 /* CardView.swift */; };
+		C91B0D662282A72C007D7624 /* Extension&UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B0D642282A724007D7624 /* Extension&UIView.swift */; };
 		C9413A132271852A00440347 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9413A122271852A00440347 /* Animal.swift */; };
 		C9413A1F2274DD0200440347 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9413A1E2274DD0200440347 /* Sound.swift */; };
 		C9985A242269977F00C87E69 /* Lion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A0A2269977D00C87E69 /* Lion.mp3 */; };
@@ -46,6 +45,7 @@
 		C9985A3C2269977F00C87E69 /* Snake.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9985A222269977F00C87E69 /* Snake.wav */; };
 		C9985A3D2269977F00C87E69 /* Horse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A232269977F00C87E69 /* Horse.mp3 */; };
 		C9985A3F226AD52000C87E69 /* AnimalsStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9985A3E226AD52000C87E69 /* AnimalsStock.swift */; };
+		C9F43B952283E82D007402E9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F43B942283E82D007402E9 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,8 +60,7 @@
 		C9172DB322079BEE009EC08F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C91B0D36227E9AA0007D7624 /* AnimalCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCardCell.swift; sourceTree = "<group>"; };
 		C91B0D3A227EB50B007D7624 /* CardStackLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackLayout.swift; sourceTree = "<group>"; };
-		C91B0D62228210CB007D7624 /* Extension&UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension&UIView.swift"; sourceTree = "<group>"; };
-		C93C7994220C00CD002BA573 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C91B0D642282A724007D7624 /* Extension&UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension&UIView.swift"; sourceTree = "<group>"; };
 		C9413A122271852A00440347 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		C9413A1E2274DD0200440347 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		C9985A0A2269977D00C87E69 /* Lion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Lion.mp3; path = ../../Sounds/Lion.mp3; sourceTree = "<group>"; };
@@ -91,6 +90,7 @@
 		C9985A222269977F00C87E69 /* Snake.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Snake.wav; path = ../../Sounds/Snake.wav; sourceTree = "<group>"; };
 		C9985A232269977F00C87E69 /* Horse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Horse.mp3; path = ../../Sounds/Horse.mp3; sourceTree = "<group>"; };
 		C9985A3E226AD52000C87E69 /* AnimalsStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsStock.swift; sourceTree = "<group>"; };
+		C9F43B942283E82D007402E9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E2494D10B07E14A59DC5652A /* Pods-Roar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roar/Pods-Roar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,9 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				C9172DAB22079BEC009EC08F /* Main.storyboard */,
-				C93C7994220C00CD002BA573 /* CardView.swift */,
 				C91B0D36227E9AA0007D7624 /* AnimalCardCell.swift */,
 				C91B0D3A227EB50B007D7624 /* CardStackLayout.swift */,
+				C9F43B942283E82D007402E9 /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,7 +164,7 @@
 				C9413A122271852A00440347 /* Animal.swift */,
 				C9985A3E226AD52000C87E69 /* AnimalsStock.swift */,
 				C9413A1E2274DD0200440347 /* Sound.swift */,
-				C91B0D62228210CB007D7624 /* Extension&UIView.swift */,
+				C91B0D642282A724007D7624 /* Extension&UIView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -340,14 +340,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9985A3F226AD52000C87E69 /* AnimalsStock.swift in Sources */,
+				C9F43B952283E82D007402E9 /* CardView.swift in Sources */,
 				C9172DAA22079BEC009EC08F /* HomeController.swift in Sources */,
 				C91B0D3B227EB50B007D7624 /* CardStackLayout.swift in Sources */,
-				C91B0D63228210CB007D7624 /* Extension&UIView.swift in Sources */,
-				C93C7995220C00CD002BA573 /* CardView.swift in Sources */,
 				C9413A132271852A00440347 /* Animal.swift in Sources */,
 				C9172DA822079BEC009EC08F /* AppDelegate.swift in Sources */,
 				C9413A1F2274DD0200440347 /* Sound.swift in Sources */,
 				C91B0D37227E9AA0007D7624 /* AnimalCardCell.swift in Sources */,
+				C91B0D662282A72C007D7624 /* Extension&UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,24 +2,27 @@
 //  CardView.swift
 //  Roar
 //
-//  Created by Matt on 07/02/2019.
+//  Created by Matt on 09/05/2019.
 //  Copyright © 2019 mindelicious. All rights reserved.
 //
 
 import UIKit
 
-extension HomeController {
-    
-    // MARK: - Gradient On a textView
-    func gradientTextView() {
-//        
-//        let gradientLayer = CAGradientLayer()
-//        textView.backgroundColor = UIColor.black.withAlphaComponent(0.75)
-//        gradientLayer.frame = textView.bounds
-//        gradientLayer.colors = [UIColor.clear.cgColor, UIColor.clear.cgColor, UIColor.black.cgColor, UIColor.black.cgColor]
-////        gradientLayer.locations = [0, 0.2, 0.2, 1]
-//        textView.layer.mask = gradientLayer
-//        
-    }
+class CardView: UIView {
 
+    fileprivate let imageView = UIImageView(image: #imageLiteral(resourceName: "Bear"))
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        //custom drawing code
+        backgroundColor = .white
+        
+        addSubview(imageView)
+        imageView.fillSuperview()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
 }

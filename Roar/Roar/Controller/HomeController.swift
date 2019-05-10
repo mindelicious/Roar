@@ -24,6 +24,8 @@ class HomeController: UIViewController {
     let treshold: CGFloat = 80
     var initialCGRect = CGRect()
     
+    let cardDeckView = UIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,27 +34,20 @@ class HomeController: UIViewController {
         
 //        gradientTextView()
 //        setupAnimalCards()
-   
-        let redVew = UIView()
-        redVew.backgroundColor = .red
+
+        view.addSubview(cardDeckView)
+        //centerign
         
-        let blueView = UIView()
-        blueView.backgroundColor = .blue
-        
-        let stackView = UIStackView(arrangedSubviews: [redVew, blueView])
-        
-        view.addSubview(stackView)
-        stackView.frame = .init(x: 0, y: 0, width: 300, height: 500)
-        
-        // this enable auto layout for us
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        
-        stackView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        
-        
+        cardDeckView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 50, left: 10, bottom: 100, right: 10))
+      
+        setupCards()
+    }
+    
+    func setupCards() {
+        print("setting cards")
+        let cardView = CardView(frame: .zero)
+        cardDeckView.addSubview(cardView)
+        cardView.fillSuperview()
     }
     
     
