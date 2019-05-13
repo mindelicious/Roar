@@ -57,57 +57,5 @@ class HomeController: UIViewController {
         
         
     }
-    
-//    func setupAnimalCards() {
-//
-//        if animalNumber <= allAnimals.list.count - 1 {
-//
-//           animalCard.animalLabel.text = allAnimals.list[animalNumber].name
-//            animalCard.animalView.image = UIImage(named: "\(allAnimals.list[animalNumber].imageName)")
-//
-//        } else if animalNumber == allAnimals.list.endIndex {
-//
-//            animalCard.animalLabel.text = allAnimals.list[0].name
-//            animalCard.animalView.image = UIImage(named: "\(allAnimals.list[0].imageName)")
-//            animalNumber = 0
-//        }
-//
-//    }
-    
-    //MARK: - UICollectiovViewDataSource
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return allAnimals.list.count
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: animalCard.identifier, for: indexPath) as? AnimalCardCell else {
-//            return UICollectionViewCell()
-//        }
-//        let animalObject = allAnimals.list[indexPath.row]
-//
-//        cell.animalView.image = UIImage(named: "\(animalObject.imageName)")
-//        cell.animalLabel.text = animalObject.name
-//
-//        //Creating Shadow and modify card
-//        cell.contentView.layer.cornerRadius = 8.0
-//        cell.contentView.layer.borderWidth = 1.0
-//        //border color
-//        cell.contentView.layer.borderColor = UIColor.black.cgColor
-//        cell.contentView.layer.masksToBounds = false
-//        cell.layer.shadowColor = UIColor.gray.cgColor
-//        cell.layer.shadowOffset = CGSize(width: 0, height: 1.0)
-//        cell.layer.cornerRadius = 10.0
-//        cell.layer.shadowRadius = 10.0
-//        cell.layer.shadowOpacity = 1.0
-//        cell.layer.masksToBounds = false
-//        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
-//
-//
-//
-//        return cell
-//    }
-//
-//
-    
 }
  
