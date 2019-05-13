@@ -13,10 +13,6 @@ class HomeController: UIViewController {
     
     var animalCard = AnimalCardCell()
   
-    
-//    @IBOutlet weak var cardCollectionView: UICollectionView!
-   
-    
     var allAnimals = AnimalsStock()
     var allAnimalArray = [AnimalsStock]()
     var animalNumber: Int = 0
@@ -113,77 +109,5 @@ class HomeController: UIViewController {
 //
 //
     
-
-    @IBAction func handleTap(_ recognizer: UITapGestureRecognizer) {
-        if recognizer.state == .ended {
-//            cardView.pulseCard()
-//            playSound(soundUrl: allAnimals.list[animalNumber].soundUrl)
-//
-            print("🍣", "trirurur")
-            
-            
-        }
-    }
-    
-  
-
-    
-    // MARK: - PanGesture
-//    @IBAction func panCard(recognizer: UIPanGestureRecognizer) {
-//        guard let card =  recognizer.view else { return }
-//        switch recognizer.state {
-//        case .began:
-//            initialCGRect = card.frame
-//        case .changed:
-//            panChanged(recognizer, card)
-//        case .ended:
-//            panEnded(recognizer, card)
-//        default:
-//            return
-//        }
-//    }
-    // PanChanged
-//    fileprivate func panChanged(_ recognizer: UIPanGestureRecognizer, _ card: UIView) {
-//        let panning = recognizer.translation(in: view)
-//        let degrees : CGFloat = panning.x / 20
-//       
-//        
-//        let rotationTransformation = CGAffineTransform(rotationAngle: angle)
-//        card.transform = rotationTransformation.translatedBy(x: panning.x, y: panning.y)
-//        
-//    }
-    
-    // PanEnded
-//    fileprivate func panEnded(_ recognizer: UIPanGestureRecognizer, _ card: UIView) {
-//
-//        let transitionDirection: CGFloat = recognizer.translation(in: view).x > 0 ? 1 : -1
-//        let shuldDismissCard = 
-//
-//        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
-//            if shuldDismissCard {
-//               
-//
-//                stopSound()
-//                self.animalNumber = self.animalNumber + 1
-//
-//            } else {
-             // Card going back smoothly but have a lag when want to move it again
-//                card.transform = CGAffineTransform.identity
-                
-
-            }
-            
-//        }) { (_) in
-//            // Complete animation,bringing card back
-//
-//            card.transform = CGAffineTransform.identity
-////            card.removeFromSuperview()
-////            card.frame = self.initialCGRect
-////             self.setupAnimalCards()
-//
-//
-//        }
-//    }
-//
-//}
-
+}
+ 
