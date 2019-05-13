@@ -12,16 +12,16 @@ import Foundation
 class HomeController: UIViewController {
     
     var animalCard = AnimalCardCell()
-   
+  
     
-    @IBOutlet weak var cardCollectionView: UICollectionView!
+//    @IBOutlet weak var cardCollectionView: UICollectionView!
    
     
     var allAnimals = AnimalsStock()
     var allAnimalArray = [AnimalsStock]()
     var animalNumber: Int = 0
     
-    let treshold: CGFloat = 80
+    
     var initialCGRect = CGRect()
     
     let cardDeckView = UIView()
@@ -40,16 +40,25 @@ class HomeController: UIViewController {
     }
     
     func setupCards() {
-        print("setting cards")
-        let cardView = CardView(frame: .zero)
-        cardDeckView.addSubview(cardView)
-        cardView.fillSuperview()
+        
+        allAnimals.list.forEach { (animal) in
+            
+            let cardView = CardView(frame: .zero)
+            cardView.imageView.image = UIImage(named: animal.imageName)
+            cardView.animalLabel.text = animal.name
+            cardDeckView.addSubview(cardView)
+            cardView.fillSuperview()
+         
+        }
+      
     }
     
     func setupLayout() {
+        view.backgroundColor = .white
         view.addSubview(cardDeckView)
-        //overalStackView.axis = .vertical
+      
         cardDeckView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 50, left: 12, bottom: 120, right: 12))
+        
         
     }
     
@@ -120,61 +129,61 @@ class HomeController: UIViewController {
 
     
     // MARK: - PanGesture
-    @IBAction func panCard(recognizer: UIPanGestureRecognizer) {
-        guard let card =  recognizer.view else { return }
-        switch recognizer.state {
-        case .began:
-            initialCGRect = card.frame
-        case .changed:
-            panChanged(recognizer, card)
-        case .ended:
-            panEnded(recognizer, card)
-        default:
-            return
-        }
-    }
+//    @IBAction func panCard(recognizer: UIPanGestureRecognizer) {
+//        guard let card =  recognizer.view else { return }
+//        switch recognizer.state {
+//        case .began:
+//            initialCGRect = card.frame
+//        case .changed:
+//            panChanged(recognizer, card)
+//        case .ended:
+//            panEnded(recognizer, card)
+//        default:
+//            return
+//        }
+//    }
     // PanChanged
-    fileprivate func panChanged(_ recognizer: UIPanGestureRecognizer, _ card: UIView) {
-        let panning = recognizer.translation(in: view)
-        let degrees : CGFloat = panning.x / 20
-        let angle = degrees * .pi / 180
-        
-        let rotationTransformation = CGAffineTransform(rotationAngle: angle)
-        card.transform = rotationTransformation.translatedBy(x: panning.x, y: panning.y)
-        
-    }
+//    fileprivate func panChanged(_ recognizer: UIPanGestureRecognizer, _ card: UIView) {
+//        let panning = recognizer.translation(in: view)
+//        let degrees : CGFloat = panning.x / 20
+//       
+//        
+//        let rotationTransformation = CGAffineTransform(rotationAngle: angle)
+//        card.transform = rotationTransformation.translatedBy(x: panning.x, y: panning.y)
+//        
+//    }
     
     // PanEnded
-    fileprivate func panEnded(_ recognizer: UIPanGestureRecognizer, _ card: UIView) {
-        
-        let transitionDirection: CGFloat = recognizer.translation(in: view).x > 0 ? 1 : -1
-        let shuldDismissCard = abs(recognizer.translation(in: view).x) > treshold
-        
-        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
-            if shuldDismissCard {
-                card.frame = CGRect(x: 600 * transitionDirection, y: 0, width: card.frame.width, height: card.frame.height)
-                
-                stopSound()
-                self.animalNumber = self.animalNumber + 1
-                
-            } else {
+//    fileprivate func panEnded(_ recognizer: UIPanGestureRecognizer, _ card: UIView) {
+//
+//        let transitionDirection: CGFloat = recognizer.translation(in: view).x > 0 ? 1 : -1
+//        let shuldDismissCard = 
+//
+//        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+//            if shuldDismissCard {
+//               
+//
+//                stopSound()
+//                self.animalNumber = self.animalNumber + 1
+//
+//            } else {
              // Card going back smoothly but have a lag when want to move it again
 //                card.transform = CGAffineTransform.identity
                 
 
             }
             
-        }) { (_) in
-            // Complete animation,bringing card back
-           
-            card.transform = CGAffineTransform.identity
-//            card.removeFromSuperview()
-//            card.frame = self.initialCGRect
-//             self.setupAnimalCards()
-            
-           
-        }
-    }
-    
-}
+//        }) { (_) in
+//            // Complete animation,bringing card back
+//
+//            card.transform = CGAffineTransform.identity
+////            card.removeFromSuperview()
+////            card.frame = self.initialCGRect
+////             self.setupAnimalCards()
+//
+//
+//        }
+//    }
+//
+//}
 

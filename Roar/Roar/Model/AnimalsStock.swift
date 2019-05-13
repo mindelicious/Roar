@@ -11,6 +11,7 @@ import Foundation
 class AnimalsStock {
     
     var list = [Animal]()
+    static let listt = ["Chicken","Cow", "Cat", "Bear"]
     init() {
         
         let item =  Animal(name: "Bear", soundUrl: "Bear", imageName: "Bear")
@@ -40,6 +41,6 @@ class AnimalsStock {
 //        list.append(Animal(name: "Snake", soundUrl: "Snake", imageName: "Snake"))
 //        list.append(Animal(name: "Tiger", soundUrl: "Tiger", imageName: "Tiger"))
 //        list.append(Animal(name: "Zebra", soundUrl: "Zebra", imageName: "Zebra"))
-        list.append(Animal(name: "Daddy", soundUrl: "Cough", imageName: "Daddy"))
+//        list.append(Animal(name: "Daddy", soundUrl: "Cough", imageName: "Daddy"))
     }
 }

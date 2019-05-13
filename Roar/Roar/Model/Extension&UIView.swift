@@ -98,7 +98,7 @@ extension UIView {
         let pulse = CASpringAnimation(keyPath: "transform.scale")
         pulse.duration = 0.3
         pulse.fromValue = 1
-        pulse.toValue = 0.96
+        pulse.toValue = 1.04
         pulse.autoreverses = true
         pulse.repeatCount = 1
         pulse.initialVelocity = -5
