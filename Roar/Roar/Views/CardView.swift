@@ -32,7 +32,9 @@ class CardView: UIView {
     //MARK: - Setup text displayed on card
     func setupLayout() {
         
-        backgroundColor = .white
+        backgroundColor = .rgb(red: 217, green: 217, blue: 217)
+        layer.borderColor = UIColor.rgb(red: 77, green: 77, blue: 77).cgColor
+        layer.borderWidth = 0.6
         layer.cornerRadius = 10
         imageView.contentMode = .scaleAspectFit
         
@@ -94,8 +96,8 @@ class CardView: UIView {
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.1, options: .curveEaseOut, animations: {
             if shouldDismissCard {
                 self.frame = CGRect(x: 600 * transitionDirection, y: 0, width: self.frame.width, height: self.frame.height)
-              stopSound()
-     
+                stopSound()
+                
             } else {
                 self.transform = .identity
             }
@@ -104,7 +106,7 @@ class CardView: UIView {
             if shouldDismissCard {
                 self.removeFromSuperview()
             }
-        
+            
         }
     }
     
@@ -113,9 +115,9 @@ class CardView: UIView {
     }
     
     //MARK: - UITapGestureRecognizer
-    @objc fileprivate func tapCard(recognizer: UITapGestureRecognizer, for card: CardView) {
-        if let CardView = recognizer.view as? CardView {
-        playSound(soundUrl: CardView.animalLabel.text!)
+    @objc fileprivate func tapCard(recognizer: UITapGestureRecognizer) {
+        if let cardView = recognizer.view as? CardView {
+        playSound(soundUrl: cardView.animalLabel.text!)
         }
         pulseCard()
     }

@@ -13,8 +13,8 @@
 		C9172DAD22079BEC009EC08F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9172DAB22079BEC009EC08F /* Main.storyboard */; };
 		C9172DAF22079BEE009EC08F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9172DAE22079BEE009EC08F /* Assets.xcassets */; };
 		C9172DB222079BEE009EC08F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9172DB022079BEE009EC08F /* LaunchScreen.storyboard */; };
+		C918DE0B22899B9900BC29B6 /* Daddy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C918DE0A22899B9900BC29B6 /* Daddy.mp3 */; };
 		C91B0D37227E9AA0007D7624 /* AnimalCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B0D36227E9AA0007D7624 /* AnimalCardCell.swift */; };
-		C91B0D3B227EB50B007D7624 /* CardStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B0D3A227EB50B007D7624 /* CardStackLayout.swift */; };
 		C91B0D662282A72C007D7624 /* Extension&UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91B0D642282A724007D7624 /* Extension&UIView.swift */; };
 		C9413A132271852A00440347 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9413A122271852A00440347 /* Animal.swift */; };
 		C9413A1F2274DD0200440347 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9413A1E2274DD0200440347 /* Sound.swift */; };
@@ -22,7 +22,6 @@
 		C9985A252269977F00C87E69 /* Owl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A0B2269977D00C87E69 /* Owl.mp3 */; };
 		C9985A262269977F00C87E69 /* Seagull.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A0C2269977D00C87E69 /* Seagull.mp3 */; };
 		C9985A272269977F00C87E69 /* Monkey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A0D2269977D00C87E69 /* Monkey.mp3 */; };
-		C9985A282269977F00C87E69 /* Cough.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A0E2269977D00C87E69 /* Cough.mp3 */; };
 		C9985A292269977F00C87E69 /* Fly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A0F2269977D00C87E69 /* Fly.mp3 */; };
 		C9985A2A2269977F00C87E69 /* Frog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A102269977D00C87E69 /* Frog.mp3 */; };
 		C9985A2B2269977F00C87E69 /* Seal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9985A112269977D00C87E69 /* Seal.mp3 */; };
@@ -58,8 +57,8 @@
 		C9172DAE22079BEE009EC08F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9172DB122079BEE009EC08F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9172DB322079BEE009EC08F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C918DE0A22899B9900BC29B6 /* Daddy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Daddy.mp3; path = ../../Sounds/Daddy.mp3; sourceTree = "<group>"; };
 		C91B0D36227E9AA0007D7624 /* AnimalCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCardCell.swift; sourceTree = "<group>"; };
-		C91B0D3A227EB50B007D7624 /* CardStackLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackLayout.swift; sourceTree = "<group>"; };
 		C91B0D642282A724007D7624 /* Extension&UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension&UIView.swift"; sourceTree = "<group>"; };
 		C9413A122271852A00440347 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		C9413A1E2274DD0200440347 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
@@ -67,7 +66,6 @@
 		C9985A0B2269977D00C87E69 /* Owl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Owl.mp3; path = ../../Sounds/Owl.mp3; sourceTree = "<group>"; };
 		C9985A0C2269977D00C87E69 /* Seagull.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Seagull.mp3; path = ../../Sounds/Seagull.mp3; sourceTree = "<group>"; };
 		C9985A0D2269977D00C87E69 /* Monkey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Monkey.mp3; path = ../../Sounds/Monkey.mp3; sourceTree = "<group>"; };
-		C9985A0E2269977D00C87E69 /* Cough.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Cough.mp3; path = ../../Sounds/Cough.mp3; sourceTree = "<group>"; };
 		C9985A0F2269977D00C87E69 /* Fly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Fly.mp3; path = ../../Sounds/Fly.mp3; sourceTree = "<group>"; };
 		C9985A102269977D00C87E69 /* Frog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Frog.mp3; path = ../../Sounds/Frog.mp3; sourceTree = "<group>"; };
 		C9985A112269977D00C87E69 /* Seal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Seal.mp3; path = ../../Sounds/Seal.mp3; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 			children = (
 				C9172DAB22079BEC009EC08F /* Main.storyboard */,
 				C91B0D36227E9AA0007D7624 /* AnimalCardCell.swift */,
-				C91B0D3A227EB50B007D7624 /* CardStackLayout.swift */,
 				C9F43B942283E82D007402E9 /* CardView.swift */,
 			);
 			path = Views;
@@ -183,8 +180,8 @@
 				C9985A192269977E00C87E69 /* Bear.mp3 */,
 				C9985A1C2269977E00C87E69 /* Cat.mp3 */,
 				C9985A202269977F00C87E69 /* Chicken.mp3 */,
-				C9985A0E2269977D00C87E69 /* Cough.mp3 */,
 				C9985A162269977E00C87E69 /* Cow.mp3 */,
+				C918DE0A22899B9900BC29B6 /* Daddy.mp3 */,
 				C9985A212269977F00C87E69 /* Dog.mp3 */,
 				C9985A142269977E00C87E69 /* Donkey.mp3 */,
 				C9985A152269977E00C87E69 /* Duck.mp3 */,
@@ -287,6 +284,7 @@
 				C9985A272269977F00C87E69 /* Monkey.mp3 in Resources */,
 				C9985A2A2269977F00C87E69 /* Frog.mp3 in Resources */,
 				C9985A3C2269977F00C87E69 /* Snake.wav in Resources */,
+				C918DE0B22899B9900BC29B6 /* Daddy.mp3 in Resources */,
 				C9985A242269977F00C87E69 /* Lion.mp3 in Resources */,
 				C9985A2C2269977F00C87E69 /* Snake.mp3 in Resources */,
 				C9985A322269977F00C87E69 /* Sheep.mp3 in Resources */,
@@ -297,7 +295,6 @@
 				C9985A312269977F00C87E69 /* Goat.mp3 in Resources */,
 				C9172DAF22079BEE009EC08F /* Assets.xcassets in Resources */,
 				C9985A372269977F00C87E69 /* Tiger.mp3 in Resources */,
-				C9985A282269977F00C87E69 /* Cough.mp3 in Resources */,
 				C9985A2F2269977F00C87E69 /* Duck.mp3 in Resources */,
 				C9985A342269977F00C87E69 /* Elephant.mp3 in Resources */,
 				C9985A332269977F00C87E69 /* Bear.mp3 in Resources */,
@@ -342,7 +339,6 @@
 				C9985A3F226AD52000C87E69 /* AnimalsStock.swift in Sources */,
 				C9F43B952283E82D007402E9 /* CardView.swift in Sources */,
 				C9172DAA22079BEC009EC08F /* HomeController.swift in Sources */,
-				C91B0D3B227EB50B007D7624 /* CardStackLayout.swift in Sources */,
 				C9413A132271852A00440347 /* Animal.swift in Sources */,
 				C9172DA822079BEC009EC08F /* AppDelegate.swift in Sources */,
 				C9413A1F2274DD0200440347 /* Sound.swift in Sources */,
