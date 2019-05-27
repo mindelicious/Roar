@@ -95,18 +95,12 @@ class HomeController: UIViewController {
                 self.animalNumber = self.animalNumber + 1
                 
             } else {
-             // Card going back smoothly but have a lag when want to move it again
-//                card.transform = CGAffineTransform.identity
                 
-
             }
             
         }) { (_) in
             // Complete animation,bringing card back
-           
             card.transform = CGAffineTransform.identity
-//            card.removeFromSuperview()
-//            card.frame = self.initialCGRect
              self.setupAnimalCards()
             
            
